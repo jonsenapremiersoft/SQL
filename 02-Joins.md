@@ -26,6 +26,8 @@ CREATE TABLE pedidos (
 
 ## Tipos de JOINS
 
+![Joins](https://neon.tech/postgresqltutorial/PostgreSQL-Joins.png)
+
 ### INNER JOIN
 
 O INNER JOIN é o tipo mais comum de JOIN. Ele retorna apenas os registros que têm correspondência em ambas as tabelas.
