@@ -106,9 +106,7 @@ ORDER BY valor_total DESC;
 
 ## Dicas Importantes
 
-1. Performance: INNER JOIN geralmente tem melhor performance que OUTER JOINs.
-
-2. Índices: Sempre crie índices nas colunas utilizadas nas condições de JOIN para melhor performance:
+*Índices: Sempre crie índices nas colunas utilizadas nas condições de JOIN para melhor performance:*
 ```sql
 CREATE INDEX idx_pedidos_cliente ON pedidos(id_cliente);
 ```
