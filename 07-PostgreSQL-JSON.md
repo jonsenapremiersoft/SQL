@@ -4,7 +4,7 @@
 
 O JSON (JavaScript Object Notation) é um formato de dados leve e legível que se tornou um padrão para troca de informações em aplicações modernas. O PostgreSQL oferece suporte nativo ao JSON desde a versão 9.2, com melhorias significativas em versões posteriores.
 
-## Tipos de Dados JSON Detalhados
+## Tipos de Dados JSON
 
 ### 1. Tipo JSON
 O tipo `json` armazena uma cópia exata do texto JSON entrada:
@@ -57,7 +57,7 @@ ADD CONSTRAINT dados_produto_check
 CHECK (jsonb_typeof(dados_produto) = 'object');
 ```
 
-## Operações de Inserção Detalhadas
+## Operações de Inserção
 
 ### Inserção Básica
 
@@ -104,7 +104,7 @@ INSERT INTO loja_virtual (dados_produto, historico_precos) VALUES (
 );
 ```
 
-## Operadores JSON em Detalhes
+## Operadores JSON
 
 ### 1. Operadores de Acesso
 
@@ -212,7 +212,7 @@ CREATE INDEX idx_produto_specs
 ON loja_virtual USING GIN (dados_produto jsonb_path_ops);
 ```
 
-## Exercícios Práticos Detalhados
+## Exercícios Práticos
 
 ### Exercício 1: Sistema de Perfil de Usuários
 
@@ -420,7 +420,7 @@ CREATE INDEX idx_evento_timestamp
 ON eventos_sistema USING BRIN (timestamp);
 ```
 
-## Boas Práticas Detalhadas
+## Boas Práticas
 
 1. **Estruturação de Dados**
    - Mantenha uma estrutura consistente para documentos do mesmo tipo
